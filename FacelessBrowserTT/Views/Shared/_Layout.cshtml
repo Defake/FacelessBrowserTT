@@ -1,0 +1,51 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Faceless browser</title>
+    @*<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />*@
+	@*<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />*@
+
+	@*<script src="~/Scripts/modernizr-2.6.2.js"></script>*@
+	
+	@Styles.Render("~/Content/Site.css")
+	@Styles.Render("~/Content/bootstrap.min.css")
+
+	@Scripts.Render("~/Scripts/jquery-1.10.2.min.js")
+	@Scripts.Render("~/Scripts/Helpers.js")
+	@Scripts.Render("~/Scripts/BrowserNavigating.js")
+
+	@*<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+	<script src="~/Scripts/Helpers.js"></script>
+	<script src="~/Scripts/BrowserNavigating.js"></script>*@
+</head>
+<body>
+<div id="top-panel">
+	<div>
+		<button id="go-back-btn" class="btn btn-default btn-lg">
+			<img src="../../Content/Images/back-button.png" />
+		</button>
+
+		<button id="go-forward-btn" class="btn btn-default btn-lg">
+			<img src="../../Content/Images/forward-button.png" />
+		</button>
+
+		<button id="reload-page-btn" class="btn btn-default btn-lg">
+			<img src="../../Content/Images/reload-button.png" />
+		</button>
+
+		<input id="address-field" type="text" class="form-control" placeholder="Type url or search query" aria-describedby="basic-addon1">
+
+		<button id="proceed-btn" class="btn btn-default btn-lg">
+			<img src="../../Content/Images/proceed-button.png" />
+		</button>
+	</div>
+</div>
+	
+@RenderBody()
+	
+    @*<script src="~/Scripts/bootstrap.min.js"></script>*@
+</body>
+</html>

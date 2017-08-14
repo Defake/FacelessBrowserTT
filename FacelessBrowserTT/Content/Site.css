@@ -1,0 +1,62 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+}
+
+#top-panel {
+	z-index: 9999;
+	position: fixed;
+	padding: 7px 10px;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: 0px auto;
+	width: 720px;
+	height: 50px;
+	background-color: #444;
+	background: linear-gradient(to top, #999 0%, #EEE 70%);
+	border-radius: 0 0 20px 20px;
+}
+
+/*#top-panel:hover, #top-panel:focus {
+	margin-top: 0px;
+}*/
+
+#top-panel div {
+	width: 688px;
+	margin: 0 auto;
+	height: 20px;
+}
+
+#top-panel.hideable {
+	
+}
+
+#top-panel button {
+	width: 35px;
+	height: 35px;
+	padding: 1px;
+	margin: 0 3px;
+	float: left;
+}
+
+#address-field {
+	margin: 0 12px;
+	height: 35px;
+	float: left;
+	width: 500px;
+	font-size: 15px;
+}
+
+#content {
+	width: 100%;
+	border: none;
+}
+
+.homePage {
+	color: #bbb;
+	margin: 150px auto;
+	font-size: 17pt;
+	text-align: center;
+	width: 500px;
+}
